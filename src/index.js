@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Chessdrill from './chessdrill';
 import * as serviceWorker from './serviceWorker';
+
+import 'chessdrill/dist/assets/chessdrill.css';
+import 'chessdrill/dist/assets/theme.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Chessdrill />
   </React.StrictMode>,
   document.getElementById('root')
 );

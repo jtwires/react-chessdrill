@@ -2,7 +2,7 @@ import React, { useRef, useLayoutEffect } from 'react';
 import NativeChessdrill from 'chessdrill';
 
 export default function Chessdrill() {
-  
+
   const element = useRef(null);
 
   useLayoutEffect(() => {

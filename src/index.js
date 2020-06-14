@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Chessdrill from './chessdrill';
+
+import { Provider } from 'react-redux';
+
 import * as serviceWorker from './serviceWorker';
 
+import App from './app';
+import Store from './store/store';
+
+import './index.css';
 import 'chessdrill/dist/assets/chessdrill.css';
 import 'chessdrill/dist/assets/theme.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Chessdrill />
-  </React.StrictMode>,
+  <Provider store={Store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
 
